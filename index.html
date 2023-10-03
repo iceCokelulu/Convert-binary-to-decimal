@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Bin2Dec</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box">
+        <label for="binary-number">Bin2Dec</label>
+        <p style="display: none" class="error" id="error">
+          Input errors, please re-enter
+        </p>
+        <input
+          type="number"
+          id="binary-number"
+          placeholder="Please enter an eight-digit binary number " />
+        <p id="result" class="result"></p>
+      </div>
+    </div>
+  </body>
+</html>

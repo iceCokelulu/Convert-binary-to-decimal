@@ -1,0 +1,61 @@
+// 清除input number类型右侧的数字按钮
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+// 设置placeholder样式
+::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #adadad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  .container {
+    width: 25rem;
+    height: 12.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0.8;
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      label {
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
+      input {
+        width: 80%;
+        padding: 0.625rem 1.875rem;
+      }
+      .error {
+        color: red;
+      }
+      .result {
+        color: tomato;
+      }
+    }
+  }
+}
